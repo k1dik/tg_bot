@@ -31,7 +31,7 @@ async def get_currency(update: Update, context: CallbackContext) -> None:
     responce = requests.get(currency_url)
     data = responce.json()
     await update.message.reply_text(
-        f'1 доллар стоит {data['Valute']['USD']['Value']} рублей'
+        f'1 доллар стоит {data["Valute"]["USD"]["Value"]} рублей'
         )
     
 async def get_schedule(update: Update, context: CallbackContext) -> None:
