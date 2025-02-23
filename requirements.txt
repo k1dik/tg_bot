@@ -1,0 +1,4 @@
+python-telegram-bot==20.0
+requests==2.26.0
+currency-converter==0.5.5
+geonamescache==1.0.2
