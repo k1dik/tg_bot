@@ -74,7 +74,7 @@ async def get_news(update:Update, context: CallbackContext):
         f'Самые главные новости на сегодня:')
     for elem in response_news['articles']:
         await update.message.reply_text(
-            f'{elem["author"]}: {elem["description"]} \n Ссылка: {elem["url"]}\n{'-' * 100}')
+            f'{elem["author"]}: {elem["description"]} \n Ссылка: {elem["url"]}\n{"-" * 100}')
 
 def main():
     TOKEN = '7250105051:AAG7d3gZNSctrS1JcMTFTvnrGj1E1kbqxM4'
